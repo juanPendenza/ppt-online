@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2000' height='1900' preserveAspectRatio='none' viewBox='0 0 2000 1900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1021%26quot%3b)' fill='none'%3e%3crect width='2000' height='1900' x='0' y='0' fill='rgba(212%2c 237%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c907.056C166.6%2c898.025%2c289.355%2c753.837%2c411.238%2c639.899C515.21%2c542.704%2c596.296%2c428.727%2c651.855%2c297.692C706.193%2c169.538%2c737.493%2c34.284%2c726.871%2c-104.508C715.73%2c-250.078%2c693.107%2c-407.883%2c589.948%2c-511.193C488.439%2c-612.851%2c320.663%2c-586.072%2c188.884%2c-643.281C31.087%2c-711.786%2c-86.221%2c-882.551%2c-258.218%2c-879.409C-438.241%2c-876.12%2c-628.938%2c-780.053%2c-723.159%2c-626.621C-815.964%2c-475.496%2c-732.577%2c-282.804%2c-733.493%2c-105.46C-734.263%2c43.56%2c-779.781%2c192.739%2c-728.116%2c332.519C-674.387%2c477.883%2c-562.586%2c590.091%2c-440.924%2c686.091C-309.198%2c790.032%2c-167.55%2c916.138%2c0%2c907.056' fill='%23bde3ff'%3e%3c/path%3e%3cpath d='M2000 2667.33C2165.4610000000002 2654.946 2355.309 2758.872 2487.614 2658.742 2621.0190000000002 2557.779 2560.193 2339.727 2632.328 2188.774 2706.427 2033.712 2899.542 1940.079 2912.9120000000003 1768.743 2926.721 1591.782 2823.9790000000003 1420.687 2702.3540000000003 1291.4070000000002 2583.2219999999998 1164.778 2419.437 1078.5320000000002 2246.524 1060.415 2086.446 1043.643 1950.687 1162.301 1793.335 1196.163 1618.495 1233.788 1404.079 1148.409 1272.875 1269.943 1142.7359999999999 1390.491 1178.248 1602.943 1163.358 1779.709 1149.3220000000001 1946.339 1138.545 2111.003 1188.588 2270.559 1243.556 2445.817 1298.1019999999999 2654.736 1463.107 2735.4210000000003 1628.517 2816.305 1816.387 2681.073 2000 2667.33' fill='%23ebf7ff'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1021'%3e%3crect width='2000' height='1900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+:root {
+  --blue: #006cfc;
+  --dark-blue: #001997;
+  --green: #009048;
+}
+
+.main-container {
+  padding: 20px;
+  height: 100vh;
+}
+
+.hands-container {
+  width: 100%;
+  max-width: 400px;
+  height: 20vh;
+  justify-content: space-between;
+  display: flex;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.game-room-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 15px;
+}
+
+.start-room-content {
+  max-width: 400px;
+  min-height: 300px;
+  align-items: center;
+  display: grid;
+  margin: 0 auto;
+  gap: 25px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.start-game-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.code-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.existing-room-form {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Roboto Mono";
+}
+
+.input {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.button {
+  height: 87px;
+  min-width: 330px;
+  max-width: 380px;
+  border: 10px solid var(--dark-blue);
+  border-radius: 10px;
+  background-color: var(--blue);
+  color: white;
+  font-family: "Odibee Sans", cursive;
+  font-size: 45px;
+}
+
+.countdown-container {
+  min-width: 330px;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.game-container {
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.countdown {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: solid 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disabeld {
+  pointer-events: none;
+  opacity: 50%;
+}
+
+.target {
+  opacity: 100%;
+  position: relative;
+  bottom: 50px;
+}
+
+.img-container {
+  width: 250px;
+  height: 250px;
+}
+.score-container {
+  width: 260px;
+  height: 200px;
+  border: 10px solid;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

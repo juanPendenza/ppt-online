@@ -23,7 +23,7 @@
     "timers-browserify": "^2.0.11"
   },
   "scripts": {
-    "dev:back": "nodemon --watch ./server/index.ts --exec ts-node ./server/dev.ts",
+    "dev:back": "nodemon --watch ./server/index.ts --exec ts-node ./server/index.ts",
     "dev:front": "parcel ./client/index.html",
     "build:back": "tsc",
     "build:front": "parcel build ./client/index.html",
