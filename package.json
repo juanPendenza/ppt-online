@@ -1,0 +1,33 @@
+{
+  "name": "desafio-m6",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@vaadin/router": "^1.7.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase": "9.15.0",
+    "firebase-admin": "^11.5.0",
+    "lodash": "4.17.21",
+    "nanoid": "3.3.4",
+    "parcel": "2.8.2",
+    "path": "^0.12.7",
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.15.11",
+    "nodemon": "^2.0.21",
+    "process": "0.11.10",
+    "timers-browserify": "^2.0.11"
+  },
+  "scripts": {
+    "dev:back": "nodemon --watch ./server/index.ts --exec ts-node ./server/dev.ts",
+    "dev:front": "parcel ./client/index.html",
+    "build:back": "tsc",
+    "build:front": "parcel build ./client/index.html",
+    "build": "yarn build:front && yarn build:back",
+    "start": "node ./server/index.js"
+  }
+}
