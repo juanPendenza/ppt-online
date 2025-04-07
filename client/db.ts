@@ -4,9 +4,9 @@ import { getDatabase, ref, onValue } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "TZNJuaO2rDMcQS1FW4mvhB5FfaiZpKXTzyphhkri",
-  databaseURL: "https://modulo-6-firebase-default-rtdb.firebaseio.com/",
-  projectId: "modulo-6-firebase",
-  authDomain: "modulo-6-firebase.firebaseapp.com",
+  databaseURL: "https://ppt-online-255de-default-rtdb.firebaseio.com",
+  projectId: "ppt-online-255de",
+  authDomain: "ppt-online-255de.firebaseapp.com",
 };
 
 const app = initializeApp(firebaseConfig);
