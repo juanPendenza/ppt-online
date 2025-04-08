@@ -4,7 +4,7 @@ let API_BASE_URL = "";
 if (process.env.ENVIRONMENT == "development") {
   API_BASE_URL = "http://localhost:3002";
 } else if (process.env.ENVIRONMENT == "production") {
-  API_BASE_URL = "https://ppt-online.onrender.com";
+  API_BASE_URL = "https://ppt-online-server.onrender.com";
 }
 
 const state = {
