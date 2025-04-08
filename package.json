@@ -27,7 +27,7 @@
     "dev:front": "parcel ./client/index.html",
     "build:back": "tsc",
     "build:front": "parcel build ./client/index.html",
-    "build": "yarn build:front && yarn build:back",
+    "build": "npm run build:front && npm run build:back",
     "start": "node ./server/index.js"
   }
 }
