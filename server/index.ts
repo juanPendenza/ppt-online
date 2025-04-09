@@ -5,7 +5,11 @@ import * as path from "path";
 import { nanoid } from "nanoid";
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL, // solo puede hacerlo con el 5173
+  })
+);
 app.use(express.json());
 const port = 3002;
 
