@@ -26,7 +26,7 @@
     "dev:back": "nodemon --watch ./server/index.ts --exec ts-node ./server/index.ts",
     "dev:front": "parcel ./client/index.html",
     "build:back": "tsc",
-    "build:front": "parcel build ./client/index.html --no-optimize --no-scope-hoist",
+    "build:front": "parcel build ./client/index.html --dist-dir ./client/dist --no-optimize --no-scope-hoist",
     "build": "npm run build:front && npm run build:back",
     "start": "node ./server/index.js"
   }
